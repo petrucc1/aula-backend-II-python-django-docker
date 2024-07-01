@@ -1,0 +1,1 @@
+Construção monolítica com Django e desenvolvimento de uma API com FastAPI
