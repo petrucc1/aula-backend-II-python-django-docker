@@ -1,34 +1,45 @@
-# Ambiente Python para desenvolvimento
+# Projeto de Aula da USP: Backend com Python, Django e FastAPI
 
-- Após o download, dentro do [Visual Studio Code](https://code.visualstudio.com/), execute o comando para criar e utilizar o ambiente Python
+Este projeto é parte do material didático utilizado nas aulas de Backend II do curso de tecnologia da Universidade de São Paulo (USP). O objetivo principal é fornecer aos estudantes uma experiência prática com o desenvolvimento de aplicações backend utilizando Python, juntamente com dois frameworks populares: Django e FastAPI.
 
-```
-docker-compose up -d --build
-```
+## Estrutura do Projeto
 
-## Visual Studio Code
+O projeto está organizado da seguinte forma:
 
-> Caso já tenha o Visual Studio Code instalado em seu sistema operacional, não é necessário seguir os passos abaixo
+- `aula/`: Contém os diretórios principais do projeto, divididos entre Django e FastAPI.
+  - `django-produtos/`: Aplicação Django para gerenciamento de produtos.
+    - `db.sqlite3`: Banco de dados SQLite para armazenamento de dados dos produtos.
+    - `manage.py`: Script de linha de comando do Django para tarefas administrativas.
+    - `produto/`: Diretório contendo os modelos, views e templates específicos da aplicação de produtos.
+    - `requirements.txt`: Lista de dependências necessárias para a aplicação Django.
+    - `setup/`: Configurações adicionais para a aplicação.
+    - `venv/`: Ambiente virtual Python para isolamento das dependências.
+  - `fastapi-produtos/`: Aplicação FastAPI para gerenciamento de produtos.
+    - `app.py`: Arquivo principal da aplicação FastAPI, contendo a definição dos endpoints.
+    - `models/`: Diretório contendo os modelos de dados utilizados pela aplicação FastAPI.
+    - `requirements.txt`: Lista de dependências necessárias para a aplicação FastAPI.
+    - `venv/`: Ambiente virtual Python para isolamento das dependências.
+- `docker-compose.yaml`: Arquivo de configuração do Docker Compose para orquestrar contêineres necessários ao projeto.
+- `Dockerfile`: Arquivo de configuração para criar uma imagem Docker personalizada para o projeto.
+- `readme.md`: Este arquivo, contendo informações sobre o projeto e instruções de uso.
+- `referencial/`: Contém estruturas de referência para as aplicações Django e FastAPI, similar à pasta `aula/`.
 
-Aqui estão as instruções para instalar o Visual Studio Code (VSCode) em diferentes sistemas operacionais.
+## Objetivo do Projeto
 
-### Windows
+O projeto visa proporcionar aos alunos uma compreensão prática sobre:
 
-1. Acesse o site oficial do VSCode em [https://code.visualstudio.com/](https://code.visualstudio.com/).
-2. Clique no botão de download para Windows.
-3. Execute o instalador que foi baixado (geralmente chamado VSCodeSetup.exe).
-4. Siga as instruções do instalador, aceitando os padrões recomendados, como associação de arquivos, a menos que você tenha preferências específicas.
-5. Após a instalação, inicie o Visual Studio Code a partir do menu Iniciar ou do ícone na área de trabalho.
+- Desenvolvimento de aplicações web com Django e FastAPI.
+- Utilização de bancos de dados com Django ORM e SQLite.
+- Criação e gerenciamento de ambientes virtuais Python.
+- Uso de Docker e Docker Compose para orquestração de contêineres.
+- Práticas de desenvolvimento e organização de código em projetos reais.
 
-### macOS
+## Como Usar
 
-1. Acesse o site oficial do VSCode em [https://code.visualstudio.com/](https://code.visualstudio.com/).
-2. Clique no botão de download para macOS.
-3. Uma vez que o arquivo .dmg for baixado, abra-o.
-4. Arraste o ícone do Visual Studio Code para a pasta de "Aplicativos" no seu Mac.
-5. Abra o VSCode a partir da pasta de "Aplicativos" ou da Dock.
+Para utilizar este projeto, siga as instruções de instalação do ambiente Python e do Visual Studio Code disponíveis no arquivo `readme.md`. Após configurar o ambiente, você pode executar as aplicações Django e FastAPI localmente ou dentro de contêineres Docker, conforme preferir.
 
-### linux
+Para mais detalhes sobre a execução e desenvolvimento das aplicações, consulte os arquivos `readme.md` específicos dentro dos diretórios `aula/django-produtos/` e `aula/fastapi-produtos/`.
 
-1. A forma mais simples de instalar o Visual Studio Code em distribuições Debian/Ubuntu é baixar e instalar o pacote .deb (64 bits)
-[Debian ou Ubunto](https://code.visualstudio.com/download). Caso utilize outra distribuição, [neste link você encontra a documentação oficial com as explicações e passo a passo da instalação](https://code.visualstudio.com/docs/setup/linux).
+---
+
+Este projeto é parte do material didático da Universidade de São Paulo e destina-se exclusivamente a fins educacionais.
