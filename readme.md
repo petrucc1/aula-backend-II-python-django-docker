@@ -36,9 +36,9 @@ O projeto visa proporcionar aos alunos uma compreensão prática sobre:
 
 ## Como Usar
 
-Para utilizar este projeto, siga as instruções de instalação do ambiente Python e do Visual Studio Code disponíveis no arquivo `readme.md`. Após configurar o ambiente, você pode executar as aplicações Django e FastAPI localmente ou dentro de contêineres Docker, conforme preferir.
+Para utilizar este projeto, siga as instruções de instalação do ambiente Python e do Visual Studio Code disponíveis no arquivo `dicas.txt`. Após configurar o ambiente, você pode executar as aplicações Django e FastAPI localmente ou dentro de contêineres Docker, conforme preferir.
 
-Para mais detalhes sobre a execução e desenvolvimento das aplicações, consulte os arquivos `readme.md` específicos dentro dos diretórios `aula/django-produtos/` e `aula/fastapi-produtos/`.
+Para mais detalhes sobre a execução e desenvolvimento das aplicações, consulte os arquivos `dicas.txt` específicos dentro dos diretórios `aula/django-produtos/` e `aula/fastapi-produtos/`.
 
 ---
 
